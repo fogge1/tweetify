@@ -15,8 +15,8 @@ export default {
     },
     methods: {
         publish() {
-            if (this.input != '') {
-                let bird = {message: this.input, user:"testuser"}
+            if (this.input != '' && this.$store.getters.getUser) {
+                let bird = {message: this.input, userId: this.$store.getters.getUser._id}
                 this.$axios.post("http://localhost:3000/birds", bird)
                     .then(response => console.log(response))
                     .catch((err) => {

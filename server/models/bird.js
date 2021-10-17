@@ -7,7 +7,7 @@ const Bird = mongoose.model('Bird', new mongoose.Schema({
         required: true,
         maxlength: 255
     },
-    user: {
+    userId: {
         type: String,
         required: true,
     }

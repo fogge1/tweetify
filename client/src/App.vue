@@ -4,6 +4,7 @@
       <PostBird></PostBird>
       <BirdContainer ></BirdContainer>
       <LoginComponent ></LoginComponent>
+      
     </div>
     
   </div>
