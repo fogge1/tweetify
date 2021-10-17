@@ -7,7 +7,7 @@ const birds = require('./routes/birds')
 const { allowCrossDomain } = require('./middleware/cors');
 const users = require('./routes/users');
 
-mongoose.connect('mongodb+srv://isakfogelberg:wt!Smha1320@tweetify.fadut.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('')
   .then(() => console.log('Connected to MongoDB...'))
   .catch(err => console.error('Could not connect to MongoDB... ' + err));
 
